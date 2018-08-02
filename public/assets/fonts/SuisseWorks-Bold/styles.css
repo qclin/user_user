@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'SuisseWorks-Bold';
+  src: url('SuisseWorks-Bold.eot?#iefix') format('embedded-opentype'),  url('SuisseWorks-Bold.otf')  format('opentype'),
+	     url('SuisseWorks-Bold.woff') format('woff'), url('SuisseWorks-Bold.ttf')  format('truetype'), url('SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

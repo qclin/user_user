@@ -1,0 +1,18 @@
+@import url('typography.css');
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+#about-page {
+  background-color: red;
+}
+#philosophy-page {
+  background-color: green;
+}
+#services-page {
+  background-color: blue;
+}
