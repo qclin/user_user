@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var Q = require('q');
 var pug = require('pug');
-
+var fs = require('fs');
 var app = express();
 
 app.use(cors());
@@ -14,8 +14,25 @@ app.set('views', './public/views');
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res){
-	res.render('index');
+	var imgFiles = getFiles('./public/assets/images')
+	res.render('index', {imgFiles});
 });
 
 
 app.listen(3000, () => console.log('listening on 3000 '))
+
+
+function getFiles (dir, files_){
+    files_ = files_ || [];
+    var files = fs.readdirSync(dir);
+    for (var i in files){
+        var name = dir + '/' + files[i];
+        if (fs.statSync(name).isDirectory()){
+            getFiles(name, files_);
+        } else if(!files[i].startsWith('.')) {
+						var cleanName = name.replace('./public/assets/', ' ')
+            files_.push(cleanName);
+        }
+    }
+    return files_;
+}

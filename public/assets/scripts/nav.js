@@ -1,34 +1,40 @@
-window.onload=function(){
+$(document).ready( function(){
+
+
   $('.tablink').click(function(){
     $('.tabcontent').hide();
     $('.tablink').removeClass('open');
     $('.tablink').css('background', '');
     $(this).addClass('open');
     var pageName = this.dataset.value
+    if(pageName == 'about'){
+      addAboutCarousel();
+    }
+
+    if(pageName != 'services'){
+      $('.service-images').css('opacity', '0');
+    }
     $(`#${pageName}-page`).show();
+
+    loadCarousel();
+
+     // bing this to certain scroll index
   });
-  function openPage(pageName, elmnt){
-      // Hide all elements with class="tabcontent" by default */
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-      }
 
-      // Remove the background color of all tablinks/buttons
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].style.backgroundColor = "";
-      }
 
-      // Show the specific tab content
-      document.getElementById(pageName).style.display = "block";
+  $("#defaultOpen").click();
 
-      // Add the specific color to the button used to open the tab content
-      elmnt.style.backgroundColor = color;
-  }
+});
 
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-
+function addAboutCarousel(){
 }
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 250){
+        $('nav').addClass("sticky");
+    }
+    else{
+        $('nav').removeClass("sticky");
+    }
+});

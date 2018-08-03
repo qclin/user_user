@@ -1,4 +1,6 @@
 @import url('typography.css');
+@import url('skeleton/skeleton.css');
+/* @import url('skeleton/normalize.css'); */
 
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
@@ -7,12 +9,89 @@ body, html {
   font-family: Arial;
 }
 
+
+body.inverse{
+  color: #fff
+}
 #about-page {
-  background-color: red;
+  /* background-color: red; */
 }
 #philosophy-page {
-  background-color: green;
+  /* background-color: green; */
 }
 #services-page {
-  background-color: blue;
+  /* background-color: blue; */
+}
+.main-text{
+  background: rgba(0,0,0,.65);
+  color: white;
+  padding: 1.75em;
+}
+
+.marker{
+  width: 15px;
+  height: 15px;
+  background: #00FF23;
+  border-radius: 8px;
+
+}
+.carousel-image img{
+  position: absolute;
+  z-index: -1000;
+  top: 0;
+  max-width: 100%;
+  min-height: 100vh;
+
+  object-fit: cover;
+
+}
+
+ul.service{
+}
+
+li{
+  list-style: none;
+  margin-left: 0;
+}
+.services .subheader{
+  cursor: pointer;
+}
+.services .content{
+  display: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.services .marker{
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.service-images{
+  top:0;
+  left: 0;
+  position: fixed !important;
+  /* height: 100vh; */
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+.visible{
+  opacity: 1 !important;
+}
+
+.stay{
+  position: fixed !important;
+  height: 100%;
+}
+
+#service-carousel{
+  z-index: -1000;
+}
+
+#service-carousel img{
+
 }
