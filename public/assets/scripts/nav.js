@@ -7,6 +7,7 @@ $(document).ready( function(){
     $('.tablink').css('background', '');
     $(this).addClass('open');
     var pageName = this.dataset.value
+
     if(pageName == 'about'){
       addAboutCarousel();
     }
@@ -20,7 +21,6 @@ $(document).ready( function(){
 
      // bing this to certain scroll index
   });
-
 
   $("#defaultOpen").click();
 

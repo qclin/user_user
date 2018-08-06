@@ -1,51 +1,51 @@
 .logo{
   font-family: 'SuisseWorks-Bold';
-  font-size: 118px;
-  line-height: 120px;
-  margin: 0; 
+  font-size: 88px;
+  line-height: 114px;
+  margin: 0;
 }
 
 .small-logo{
   font-family: 'SuisseWorks-Bold';
-  font-size: 54px;
+  font-size: 40px;
 }
 
 .tagline{
   font-family: 'Apercu-Regular';
-  font-size: 20px;
-  line-height: 26.6px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .menu-item{
   font-family: 'Apercu-Bold';
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
 /* header */
 header{
   font-family: 'Apercu-Regular';
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 /* subheader */
 .subheader{
   font-family: 'Apercu-Regular';
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 body{
   font-family: 'Apercu-Regular';
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 caption, footer{
   font-family: 'Apercu-Regular';
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 

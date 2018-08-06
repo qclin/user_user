@@ -11,14 +11,19 @@ html
     title User Group
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
   body
+    header.logo-wrapper 
+      h1#home.logo user group
+      p.tagline Urban Systems & Environments 
+        br
+        | Research Group
+
     include partials/nav.pug
     section#content-wrapper
       #content  
         div.tabcontent#about-page
           .row
             .one-half.column
-              p.main-text User Group is a worker-owned cooperative run by a committed group of scientists, engineers, IT specialists, economists, and designers. Our combined expertise enables the delivery of a range of professional services regarding complex geospatial data collection and their utilization, as well as the integration of enhanced geospatial data capabilities and platforms into existing institutional  structures and operational frameworks. 
-                 .marker
+              p.main-text User Group is a worker-owned cooperative run by a committed group of scientists, engineers, IT specialists, economists, and designers. Our combined expertise enables the delivery of a range of professional services regarding complex geospatial data collection and their utilization, as well as the integration of enhanced geospatial data capabilities and platforms into existing institutional  structures and operational frameworks. #[span.marker]
         div.tabcontent#philosophy-page
           .row
             .one-half.column
@@ -87,6 +92,8 @@ html
     section#about-carousel
       div.carousel-image
       div.tagline
+    include partials/contact.pug
+    
     script.
       var imageUrls = !{JSON.stringify(imgFiles)}
 
