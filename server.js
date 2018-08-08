@@ -6,6 +6,8 @@ var pug = require('pug');
 var fs = require('fs');
 var app = express();
 
+var mailer = require('./lib/mailer');
+
 app.use(cors());
 app.use(bodyParser.json({ extended: false }));
 app.use(express.static(__dirname + "/public/assets"));
@@ -17,6 +19,18 @@ app.get('/', function(req, res){
 	var imgFiles = getFiles('./public/assets/images')
 	res.render('index', {imgFiles});
 });
+
+var router = express.Router();
+app.use('/sayHello', router);
+router.post('/', mailer.sayHello);
+
+// var jsonParser = bodyParser.json()
+//
+// app.post('/sayHello', function(req, res){
+// 		console.log("POST sayHello", req.body)
+// 		console.log(req)
+// });
+
 
 
 app.listen(3000, () => console.log('listening on 3000 '))

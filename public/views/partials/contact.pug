@@ -1,16 +1,19 @@
+link(rel='stylesheet', href='./styles/contact.css')
 section#contact-modal
   span#close-modal &times;
   p User Group is a worker-owned cooperative run by a committed group of scientists, engineers, IT specialists, economists, and designers.
   p Get in touch!
   .one-half.column 
-    label name
-    input(type="text")
-    label email address 
-    input(type="text")
-    label subject 
-    input(type="text")
-    label message 
-    input(type="text")
+    form(action="/sayHello" id="contactForm")
+      label name
+      input(type="text" name="name")
+      label email address 
+      input(type="email" name="email")
+      label subject 
+      input(type="text" name="subject")
+      label message 
+      textarea
+      input(type="submit" value="Send")
   .one-half.column
     .menu-item ADDRESS
     p.block
