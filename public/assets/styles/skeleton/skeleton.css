@@ -25,6 +25,10 @@
 - Media Queries
 */
 
+input:focus, input:active {
+   outline: none !important;
+   box-shadow: none;
+}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -169,8 +173,7 @@ select:focus {
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
-  font-weight: 600; }
+}
 fieldset {
   padding: 0;
   border-width: 0; }

@@ -20,6 +20,7 @@
   font-family: 'Apercu-Bold';
   font-size: 15px;
   text-transform: uppercase;
+  line-height: initial;
 }
 
 /* header */
@@ -42,7 +43,7 @@ body{
   line-height: 23px;
 }
 
-caption, footer{
+caption, footer, .error-message{
   font-family: 'Apercu-Regular';
   font-size: 12px;
   line-height: 17px;

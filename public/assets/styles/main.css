@@ -1,5 +1,6 @@
-@import url('typography.css');
 @import url('skeleton/skeleton.css');
+@import url('typography.css');
+@import url('grid.css');
 /* @import url('skeleton/normalize.css'); */
 
 /* Set height of body and the document to 100% to enable "full page tabs" */
@@ -24,7 +25,7 @@ body.inverse{
 .main-text{
   background: rgba(0,0,0,.65);
   color: white;
-  padding: 1.75em;
+  padding: 30px;
 }
 .main-text, .main-text p{
   margin-top: 0;
@@ -42,28 +43,44 @@ body.inverse{
   background: #00FF23;
   border-radius: 8px;
 }
+
 span.marker{
   margin-top: 22px;
   display: block;
 }
 .carousel-image img{
+  left: 0;
   position: absolute;
   z-index: -1000;
   top: 0;
   max-width: 100%;
-  min-height: 100vh;
-
+  min-height: 89vh;
   object-fit: cover;
 
 }
-
-ul.service{
+.carousel-image caption{
+  position: absolute;
+  color: #000;
+  margin-left: 30px;
+  bottom: 60px;
+  width: -webkit-fill-available;
+  text-align: right;
+  margin-right: 30px;
+  padding-bottom: 15px;
 }
 
-li{
+ul.services{
+}
+
+ul.services li{
   list-style: none;
   margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  position: relative;
 }
+
+
 .services .subheader{
   cursor: pointer;
 }
@@ -71,24 +88,30 @@ li{
   display: none;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  max-width: 95%;
 }
 .services .marker{
-  opacity: 0;
+  /* opacity: 0; */
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  background: #505050;
 }
 
+.tinted{
+  background: #00FF23 !important;
+}
 .service-images{
   top:0;
   left: 0;
   position: fixed !important;
   /* height: 100vh; */
   opacity: 0;
-  -webkit-transition: opacity 2s ease-in;
-  -moz-transition: opacity 2s ease-in;
-  -o-transition: opacity 2s ease-in;
-  -ms-transition: opacity 2s ease-in;
-  transition: opacity 2s ease-in;
+  /* display: none; */
+  -webkit-transition: opacity .8s ease-in;
+  -moz-transition: opacity .8s ease-in;
+  -o-transition: opacity .8s ease-in;
+  -ms-transition: opacity .8s ease-in;
+  transition: opacity .8s ease-in;
 }
 .visible{
   opacity: 1 !important;
@@ -105,4 +128,15 @@ li{
 
 #service-carousel img{
 
+}
+
+
+footer {
+  margin: 0 30px 0 60px;
+  color: #000;
+  padding: 15px 30px;
+  border-top: 2px solid #000;
+  position: absolute;
+  bottom: -10vh;
+  width: 100%;
 }

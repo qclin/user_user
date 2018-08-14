@@ -1,7 +1,11 @@
 
 
  /* refactor to modal.css */
-
+#address{
+  right: -3em;
+  top: 145px;
+  position: absolute;
+}
 #contact-modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -25,11 +29,13 @@
   top: -13px;
   right: -13px;
   position: relative;
+  cursor: pointer;
+  width: 15px;
+  height: 15px; 
 }
 #contact-modal{
   padding: 30px;
-}
-#contact-modal .one-half{
+  border: 1px solid #ccc;
 }
 #contact-modal p{
   margin-top: 0;
@@ -41,29 +47,47 @@
 }
 label{
   text-transform: uppercase;
+  margin: 0;
 }
 input{
   border: none;
   border-bottom: #707070 1px solid;
   width: 100%;
   height: 30px;
+  padding-left: 2em;
+  margin-bottom: 25px;
 }
 
 input[type='submit']{
   border: none;
-  right: 40%;
-  position: absolute;
   bottom: 0;
   text-transform: uppercase;
-  font-size: 24px;
-  margin: .5em;
   width: inherit;
   cursor: pointer;
+}
+input#send{
+    background: url('/icons/paperplane.svg') no-repeat top left;
+    width: 4em;
+    height: 3em;
+    background-size: cover;
+}
+
+.error-message{
+  color: #FF2700;
+  display: none;
+}
+form .marker{
+  position: absolute;
+  margin-top: 8px;
+  z-index: 10;
 }
 textarea{
   border: none;
   width: 100%;
   padding: 0;
+  padding-left: 3em;
+  position: relative;
+  left: -10px;
 }
 
 textarea{

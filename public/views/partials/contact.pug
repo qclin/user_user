@@ -1,20 +1,27 @@
 link(rel='stylesheet', href='./styles/contact.css')
 section#contact-modal
-  span#close-modal &times;
+  span#close-modal
+      img(src="./icons/close_button.svg" alt="&times")
   p User Group is a worker-owned cooperative run by a committed group of scientists, engineers, IT specialists, economists, and designers.
   p Get in touch!
-  .one-half.column 
-    form(action="/sayHello" id="contactForm")
-      label name
+
+  form(action="/sayHello" id="contactForm")
+    .one-half.column
+      label.menu-item name
+      .marker
       input(type="text" name="name")
-      label email address 
+      label.menu-item email address 
+      .marker
       input(type="email" name="email")
-      label subject 
+      label.menu-item subject 
+      .marker
       input(type="text" name="subject")
-      label message 
-      textarea
-      input(type="submit" value="Send")
-  .one-half.column
+      label.menu-item message 
+      .marker
+    textarea
+    input(type="submit" value="" id="send") 
+    span.error-message Sorry, your message has not been sent due to an error in one of the above fields
+  .one-half.column#address
     .menu-item ADDRESS
     p.block
       |info@usergroupcoop.com
@@ -22,4 +29,5 @@ section#contact-modal
       | Covent Garden
       | WC2H 9JQ
       | London, UK
+
 script(type='text/javascript', src='/scripts/contact.js')

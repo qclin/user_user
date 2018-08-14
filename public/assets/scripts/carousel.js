@@ -1,5 +1,8 @@
 $(document).ready( function(){
-  loadCarousel()
+
+  if(!location.hash && location.hash.length > 0){
+    $('.tablink').eq(0).click();
+  }
 });
 
 function loadCarousel(){
@@ -8,15 +11,24 @@ function loadCarousel(){
       $('#about-carousel .carousel-image').empty()
       $('body').removeClass('inverse');
     }else{
-      var img = $('#about-carousel .carousel-image').prepend('<img>');
+
+      if($('#about-carousel .carousel-image').find('img').length == 0){
+        $('#about-carousel .carousel-image').prepend('<img>');
+      }
+      if($('#about-carousel .carousel-image').find('caption').length == 0){
+        $('#about-carousel .carousel-image').prepend('<caption>');
+      }
+      var captions = ['Place one year 1', 'Place two year 2', 'place three, year 3']
       var selectedImage = getImageForPage(imageUrls, currentPage)
-      $('#about-carousel .carousel-image img').attr('src', selectedImage)
+      $('#about-carousel .carousel-image img').attr('src', selectedImage.image)
+      $('#about-carousel .carousel-image caption').text(captions[selectedImage.index])
       $('body').addClass('inverse');
     }
 }
 
 function getImageForPage(imageUrls, page){
   var imageList = imageUrls.filter(url => url.indexOf(page) != -1)
-  var image = imageList[Math.floor(Math.random()*imageList.length)];
-  return image
+  var index = Math.floor(Math.random()*imageList.length)
+  var image = imageList[index];
+  return {index, image}
 }

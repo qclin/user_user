@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var modal = $('#contact-modal')
   var closeModal = $('#close-modal')
-  $('#contact.tabLink').click(function(){
+  $('#contact').click(function(){
     modal.show();
   })
 
@@ -26,19 +26,30 @@ $(document).ready(function(){
 
     var body = { name, email, subject, message}
     console.log("Body : ", body)
-// $.post(url, body)
-    var posting = $.ajax({
-      type:'POST',
-      url: url,
-      data: JSON.stringify(body),
-      contentType: 'application/json'
-    });
-
-    posting.done(function(data){
-      // var content = $(data).find('#content');
-      // $("#result").empty().append(content);
-
-      console.log("posting is done ---- ", data)
-    })
+    var fields = [name, email, subject, message]
+    for(var i = 0; i< fields.length; i++){
+      var value = fields[i]
+      if(isBlank(value)){
+        debugger;
+        $('input').eq(i).siblings('.marker').eq(i).css('background', '#ff2700');
+      }
+    }
+    // var posting = $.ajax({
+    //   type:'POST',
+    //   url: url,
+    //   data: JSON.stringify(body),
+    //   contentType: 'application/json'
+    // });
+    //
+    // posting.done(function(data){
+    //   // var content = $(data).find('#content');
+    //   // $("#result").empty().append(content);
+    //   console.log("posting is done ---- ", data)
+    // })
   })
 });
+
+
+function isBlank(str) {
+    return (!str || /^\s*$/.test(str));
+}

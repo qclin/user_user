@@ -1,5 +1,5 @@
 /* Style tab links */
-.tablink {
+.tablink, a#contact{
   float: left;
   border: none;
   outline: none;
@@ -17,7 +17,6 @@
 .tablink.open{
   border-bottom: 4px #00FF00 solid;
   /* box-shadow:0 0 4px 0px #00FF00; */
-
 }
 .tablink:hover {
   /* background-color: #777; */
@@ -26,8 +25,7 @@
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   display: none;
-  padding: 58px 30px;
-  height: 100%;
+  padding: 60px 30px;
 }
 
 button{
@@ -54,4 +52,16 @@ nav.sticky {
    height: 48px;
    color: #000;
    text-align: left;
+}
+
+nav a{
+  text-decoration: none;
+  color: inherit;
+}
+nav a:hover{
+  color: inherit;
+}
+
+a#contact{
+  cursor: pointer;
 }

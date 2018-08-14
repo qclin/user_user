@@ -5,12 +5,12 @@ link(href='/styles/nav.css', rel='stylesheet')
 
 nav
   div.tab-container
-    button.tablink.menu-item#defaultOpen(data-value="about") ABOUT
+    a.tablink.menu-item#defaultOpen(href="#about" data-value="about") ABOUT
   div.tab-container
-    button.tablink.menu-item(data-value="philosophy") PHILOSOPHY
+    a.tablink.menu-item(href="#philosophy" data-value="philosophy") PHILOSOPHY
   div.tab-container
-    button.tablink.menu-item(data-value="services") SERVICES
+    a.tablink.menu-item(href="#services" data-value="services") SERVICES
   div.tab-container
-    button.tablink#contact.menu-item(data-value="contact") CONTACT
+    a#contact.menu-item(data-value="contact") CONTACT
 
 script(type='text/javascript', src='/scripts/nav.js')

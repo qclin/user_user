@@ -1,5 +1,15 @@
 $(document).ready( function(){
+  var link = location.hash
+  var subTabs = ['#about', '#services', '#philosophy', '#contact']
+  if(subTabs.indexOf(link) != 0){
+    $(`a[href='${link}']`).click();
+  }
 
+  if(link == '#about'){
+    $('footer').hide();
+  }else{
+    $('footer').show();
+  }
 
   $('.tablink').click(function(){
     $('.tabcontent').hide();
@@ -10,6 +20,9 @@ $(document).ready( function(){
 
     if(pageName == 'about'){
       addAboutCarousel();
+      $('footer').hide();
+    }else{
+      $('footer').show(); 
     }
 
     if(pageName != 'services'){
@@ -18,8 +31,6 @@ $(document).ready( function(){
     $(`#${pageName}-page`).show();
 
     loadCarousel();
-
-     // bing this to certain scroll index
   });
 
   $("#defaultOpen").click();
@@ -27,6 +38,7 @@ $(document).ready( function(){
 });
 
 function addAboutCarousel(){
+
 }
 
 
