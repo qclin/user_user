@@ -19,8 +19,15 @@ body.inverse{
 #philosophy-page {
   /* background-color: green; */
 }
-#services-page {
+#services-page footer{
+  position: absolute;
+  bottom: 0;
   /* background-color: blue; */
+}
+.service-intro{
+  margin: 30px;
+  margin-bottom: 60px;
+  width: 338px;
 }
 .main-text{
   background: rgba(0,0,0,.65);
@@ -31,11 +38,12 @@ body.inverse{
   margin-top: 0;
 }
 .logo-wrapper{
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .logo-wrapper .tagline{
   margin-top: 0;
+  margin-bottom: 60px;
 }
 .marker{
   width: 15px;
@@ -67,6 +75,7 @@ span.marker{
   text-align: right;
   margin-right: 30px;
   padding-bottom: 15px;
+  border-bottom: 1.2px solid;
 }
 
 ul.services{
@@ -136,6 +145,7 @@ ul.services li{
 }
 .methodologies{
   position: relative;
+  margin-top: 30vh;
 }
 ul.sub-nav{
   /* position: fixed; */
@@ -150,8 +160,13 @@ footer {
   margin: 0 30px 0 60px;
   color: #000;
   padding: 15px 30px;
-  border-top: 2px solid #000;
+  border-top: 1.2px solid #000;
   width: 100%;
+}
+
+footer.locked{
+  position: absolute;
+  bottom: 0;
 }
 
 ul.methodology{
@@ -186,7 +201,7 @@ ul.methodology{
     padding-bottom: 15px;
     border-bottom: 1px solid #000;
     margin-bottom: 15px;
-    color: #000; 
+    color: #000;
   }
 
   .hero{

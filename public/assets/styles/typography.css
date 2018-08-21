@@ -1,7 +1,7 @@
 .logo{
   font-family: 'SuisseWorks-Bold';
   font-size: 88px;
-  line-height: 114px;
+  line-height: 100px;
   margin: 0;
   letter-spacing: -0.5px;
 }
@@ -23,13 +23,13 @@
 
 .tagline{
   font-family: 'Apercu-Regular';
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 .menu-item{
   font-family: 'Apercu-Bold';
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
   line-height: initial;
 }
@@ -37,15 +37,15 @@
 /* header */
 header{
   font-family: 'Apercu-Regular';
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 /* subheader */
 .subheader{
   font-family: 'Apercu-Regular';
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 body{
@@ -61,12 +61,13 @@ body{
     line-height: 19px;
   }
 
-  p.block{
-    font-family: 'Apercu-Regular';
-    font-size: 12px;
-  }
 }
 
+p.block{
+  font-family: 'Apercu-Regular';
+  font-size: 12px;
+  line-height: 17px;
+}
 
 caption, footer, .error-message{
   font-family: 'Apercu-Regular';

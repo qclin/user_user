@@ -8,10 +8,11 @@
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    margin: 114px 60px;
+    margin: 103px 30px;
     max-width: 600px; /* Full width */
     width: 80vw;
     height: 70vh; /* Full height */
+    max-height: 560px;
     overflow: auto; /* Enable scroll if needed */
     background: #fff;
     color: #000;
@@ -39,6 +40,7 @@
 
 #contact-modal p.block{
   white-space: pre;
+  margin-top: 10px;
 }
 label{
   text-transform: uppercase;
@@ -65,6 +67,7 @@ input#send{
     width: 4em;
     height: 3em;
     background-size: cover;
+    margin-bottom: 0;
 }
 
 .error-message{
@@ -83,6 +86,7 @@ textarea{
   padding-left: 3em;
   position: relative;
   left: -10px;
+  margin-top: 10px;
 }
 
 textarea{
@@ -90,8 +94,8 @@ textarea{
   background-image:
     linear-gradient(to right, white 10px, transparent 10px),
     linear-gradient(to left, white 10px, transparent 10px),
-    repeating-linear-gradient(white, white 30px, #000 30px, #000 31px, white 31px);
-  line-height: 31px;
+    repeating-linear-gradient(white, white 20px, #707070 20px, #707070 21px, white 21px);
+  line-height: 21px;
 }
 
 @media (min-width: 320px) and (max-width: 767px){

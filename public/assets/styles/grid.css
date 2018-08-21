@@ -45,7 +45,7 @@ hr{
           column-count: 2;
   } */
   li.service-item:nth-of-type(even){
-    padding-left: 60px;
+    /* padding-left: 60px; */
   }
 
   .inverse li.service-item:nth-of-type(even){

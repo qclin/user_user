@@ -32,6 +32,10 @@ $(document).ready( function(){
 
     if(pageName != 'services'){
       $('.service-images').css('opacity', '0');
+      $('footer').removeClass('locked');
+
+    }else{
+      $('footer').addClass('locked');
     }
     $(`#${pageName}-page`).show();
 

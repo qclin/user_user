@@ -14,10 +14,10 @@ $(document).ready(function(){
 
   $('.services .subheader').click(function(){
     $(this).siblings('.content').toggle();
-    if($(window).width() < 769){
+    // if($(window).width() < 769){
       /// whether this is can be mobile only
       $(this).parent().siblings().find('.content').hide();
-    }
+    // }
 
   });
   // var width = $( document ).width();
