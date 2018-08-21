@@ -7,12 +7,18 @@ $(document).ready(function(){
     $('#about-carousel .carousel-image img').attr('src', imageList[position]);
     $('.service-images').animate({opacity: 0}, 10)
     $('.service-images').eq(position).animate({opacity: 1}, 10);
-    $('body').addClass('inverse');
+    if($(window).width() > 768){
+      $('body').addClass('inverse');
+    }
   });
 
   $('.services .subheader').click(function(){
     $(this).siblings('.content').toggle();
-    // $(this).parent().siblings().find('.content').hide();
+    if($(window).width() < 769){
+      /// whether this is can be mobile only
+      $(this).parent().siblings().find('.content').hide();
+    }
+
   });
   // var width = $( document ).width();
   // if(768 < width && width < 1024){

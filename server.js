@@ -7,6 +7,7 @@ var fs = require('fs');
 var app = express();
 
 var mailer = require('./lib/mailer');
+var serviceContent = require('./db/services.json');
 
 app.use(cors());
 app.use(bodyParser.json({ extended: false }));
@@ -16,8 +17,8 @@ app.set('views', './public/views');
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res){
-	var imgFiles = getFiles('./public/assets/images')
-	res.render('index', {imgFiles});
+	var imgFiles = getFiles('./public/assets/images');
+	res.render('index', {imgFiles, serviceContent});
 });
 
 var router = express.Router();

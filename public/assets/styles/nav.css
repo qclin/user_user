@@ -1,3 +1,7 @@
+
+body.fixed{
+  overflow: hidden;
+}
 /* Style tab links */
 .tablink, a#contact{
   float: left;
@@ -18,6 +22,10 @@
   border-bottom: 4px #00FF00 solid;
   /* box-shadow:0 0 4px 0px #00FF00; */
 }
+
+.highlight{
+  border-bottom: 3px #00FF00 solid;
+}
 .tablink:hover {
   /* background-color: #777; */
 }
@@ -27,7 +35,10 @@
   display: none;
   padding: 60px 30px;
 }
-
+.flat-link a{
+  text-decoration: none;
+  color: inherit;
+}
 button{
   background: transparent
 }
@@ -64,4 +75,72 @@ nav a:hover{
 
 a#contact{
   cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){
+  /* .overlay-content{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.65);
+  } */
+  .tabcontent {
+    display: none;
+    padding: 10px 15px;
+  }
+  .logo-wrapper{
+    margin: 15px 0 0 30px;
+  }
+  span.navDot{
+    bottom: 20px;
+    right: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px #888888;
+    padding: 0;
+    z-index: 10;
+  }
+  #openNav{
+    background: #fff;
+    position: fixed;
+  }
+  #closeNav{
+    background: #0f0;
+    position: absolute;
+  }
+
+  nav{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -100vw;
+    background-color: rgba(0,0,0, 0.65);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+    padding-top: 70vh;
+    padding-left: 50%;
+    color: #fff;
+  }
+  .tab-container{
+    z-index: 100;
+    display: block;
+  }
+}
+
+@media (min-width: 768px){
+  span#navDot, .nav-background{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
 }

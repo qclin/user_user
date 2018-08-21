@@ -3,6 +3,17 @@
   font-size: 88px;
   line-height: 114px;
   margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.mobile .logo{
+  letter-spacing: -3px;
+  font-size: 60px;
+  line-height: 0px;
+  z-index: 20;
+  position: absolute;
+  top: 45px;
+
 }
 
 .small-logo{
@@ -43,13 +54,25 @@ body{
   line-height: 23px;
 }
 
+@media (min-width: 320px) and (max-width: 767px){
+  body{
+    font-family: 'Apercu-Regular';
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  p.block{
+    font-family: 'Apercu-Regular';
+    font-size: 12px;
+  }
+}
+
+
 caption, footer, .error-message{
   font-family: 'Apercu-Regular';
   font-size: 12px;
   line-height: 17px;
 }
-
-
 
 @font-face {
   font-family: 'Apercu-Bold';

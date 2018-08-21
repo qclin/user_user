@@ -1,11 +1,7 @@
 
 
  /* refactor to modal.css */
-#address{
-  right: -3em;
-  top: 145px;
-  position: absolute;
-}
+
 #contact-modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -19,6 +15,8 @@
     overflow: auto; /* Enable scroll if needed */
     background: #fff;
     color: #000;
+    padding: 30px;
+    border: 1px solid #ccc;
 }
 
 #close-modal{
@@ -31,12 +29,9 @@
   position: relative;
   cursor: pointer;
   width: 15px;
-  height: 15px; 
+  height: 15px;
 }
-#contact-modal{
-  padding: 30px;
-  border: 1px solid #ccc;
-}
+
 #contact-modal p{
   margin-top: 0;
   max-width: 70%;
@@ -97,4 +92,27 @@ textarea{
     linear-gradient(to left, white 10px, transparent 10px),
     repeating-linear-gradient(white, white 30px, #000 30px, #000 31px, white 31px);
   line-height: 31px;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+
+  #contact-modal{
+    margin: 0;
+    z-index: 50;
+    width: inherit;
+    height: 100vh;
+  }
+  #address{
+    position: relative;
+  }
+
+
+}
+
+@media (min-width: 768px){
+  #address{
+    right: -3em;
+    top: 145px;
+    position: absolute;
+  }
 }

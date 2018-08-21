@@ -1,16 +1,14 @@
 link(href='/styles/nav.css', rel='stylesheet')
-//- link(href='/styles/mobile/nav.css', rel='stylesheet')
-
-//- a(href='/' data-ajax="false")
-
+  
 nav
+  span.navDot#closeNav(onclick='closeNav()')
   div.tab-container
     a.tablink.menu-item#defaultOpen(href="#about" data-value="about") ABOUT
   div.tab-container
-    a.tablink.menu-item(href="#philosophy" data-value="philosophy") PHILOSOPHY
+    a.tablink.menu-item#philosophy-tab(href="#philosophy" data-value="philosophy") PHILOSOPHY
   div.tab-container
-    a.tablink.menu-item(href="#services" data-value="services") SERVICES
+    a.tablink.menu-item#services-tab(href="#services" data-value="services") SERVICES
   div.tab-container
     a#contact.menu-item(data-value="contact") CONTACT
-
-script(type='text/javascript', src='/scripts/nav.js')
+span.navDot#openNav(onclick='openNav()')
+//- script(type='text/javascript', src='/scripts/nav.js')

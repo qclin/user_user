@@ -16,7 +16,7 @@ function loadCarousel(){
         $('#about-carousel .carousel-image').prepend('<img>');
       }
       if($('#about-carousel .carousel-image').find('caption').length == 0){
-        $('#about-carousel .carousel-image').prepend('<caption>');
+        $('#about-carousel .carousel-image').append('<caption>');
       }
       var captions = ['Place one year 1', 'Place two year 2', 'place three, year 3']
       var selectedImage = getImageForPage(imageUrls, currentPage)
