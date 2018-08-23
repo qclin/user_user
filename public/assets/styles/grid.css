@@ -19,9 +19,6 @@ hr{
   #services-page.tabcontent{
     margin-top: 150px;
   }
-  footer{
-    border-top: none !important;
-  }
 }
 @media (min-width: 768px){
     div.methodologies{

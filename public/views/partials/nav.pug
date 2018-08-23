@@ -1,7 +1,6 @@
 link(href='/styles/nav.css', rel='stylesheet')
   
 nav
-  span.navDot#closeNav(onclick='closeNav()')
   div.tab-container
     a.tablink.menu-item#defaultOpen(href="#about" data-value="about") ABOUT
   div.tab-container
@@ -10,5 +9,5 @@ nav
     a.tablink.menu-item#services-tab(href="#services" data-value="services") SERVICES
   div.tab-container
     a#contact.menu-item(data-value="contact") CONTACT
-span.navDot#openNav(onclick='openNav()')
+span.navDot(onclick='toggleNav()')
 //- script(type='text/javascript', src='/scripts/nav.js')

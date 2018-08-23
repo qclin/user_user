@@ -24,7 +24,15 @@ $(document).ready(function(){
     // }
 
   });
-  // var width = $( document ).width();
+
+  var width = $( document ).width();
+  if(width < 769){
+      $('.methodology .subheader').click(function(){
+        $(this).siblings('.content').toggle();
+          $(this).parent().siblings().find('.content').hide();
+      });
+  }
+
   // if(768 < width && width < 1024){
   //
   //   console.log(' here --- ', width)

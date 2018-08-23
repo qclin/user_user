@@ -3,8 +3,16 @@ section#contact-modal
   span#close-modal
       img(src="./icons/close_button.svg" alt="&times")
   p User Group is a worker-owned cooperative run by a committed group of scientists, engineers, IT specialists, economists, and designers.
+  .one-half.column#address
+    .menu-item ADDRESS
+    p.block
+      |info@usergroupcoop.com
+      | 71-75 Shelton Street
+      | Covent Garden
+      | WC2H 9JQ
+      | London, UK
   p Get in touch!
-
+  
   form(action="/sayHello" id="contactForm")
     .one-half.column
       label.menu-item name
@@ -21,13 +29,6 @@ section#contact-modal
     textarea
     input(type="submit" value="" id="send") 
     span.error-message Sorry, your message has not been sent due to an error in one of the above fields
-  .one-half.column#address
-    .menu-item ADDRESS
-    p.block
-      |info@usergroupcoop.com
-      | 71-75 Shelton Street
-      | Covent Garden
-      | WC2H 9JQ
-      | London, UK
+  
 
 script(type='text/javascript', src='/scripts/contact.js')

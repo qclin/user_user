@@ -24,13 +24,12 @@ $(document).ready( function(){
     $(this).addClass('open');
     var pageName = this.dataset.value
     if(pageName == 'about'){
-      addAboutCarousel();
       $('footer').hide();
     }else{
       $('footer').show();
     }
 
-    if(pageName != 'services'){
+    if(pageName != 'services' || $(window).width() < 769){
       $('.service-images').css('opacity', '0');
       $('footer').removeClass('locked');
 
@@ -43,10 +42,12 @@ $(document).ready( function(){
 
     if($(window).width() < 769){
       $(window).scrollTop(0);
-      closeNav();
     }
   });
 
+  $('body').on('click', '.open-popup', function () {
+      toggleNav();
+    });
 
   $('#stickySide a').click(function(){
     $('.highlight').removeClass('highlight')
@@ -55,19 +56,17 @@ $(document).ready( function(){
 
 });
 
-function addAboutCarousel(){
 
+function toggleNav(){
+  $('nav').toggleClass('open-popup');
+  $('body').toggleClass('fixed');
+  $('span.navDot').toggleClass('pop');
 }
 
-function openNav(){
-  $('nav').css({'right': '0'});
-  $('body').addClass('fixed');
-}
-
-function closeNav(){
-  $('nav').css({'right': '-100vw'});
-  $('body').removeClass('fixed');
-}
+// function closeNav(){
+//     $('nav').removeClass('open-popup');
+//   $('body').removeClass('fixed');
+// }
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 250 && $(window).width() > 769){

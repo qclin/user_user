@@ -72,19 +72,10 @@ nav a:hover{
   color: inherit;
 }
 
-a#contact{
-  cursor: pointer;
-  float: right;
-}
-
-
 @media (min-width: 320px) and (max-width: 767px){
-  /* .overlay-content{
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,.65);
-  } */
+  .menu-item{
+      margin-bottom: 10px;
+  }
   .tabcontent {
     display: none;
     padding: 10px 15px;
@@ -98,17 +89,17 @@ a#contact{
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    box-shadow: 1px 1px #888888;
+    box-shadow: 1px 1px 8px #000;
     padding: 0;
     z-index: 10;
-  }
-  #openNav{
     background: #fff;
     position: fixed;
   }
-  #closeNav{
-    background: #0f0;
-    position: absolute;
+  .pop{
+      background: #0f0 !important;
+  }
+  .open-popup{
+     right: 0;
   }
 
   nav{
@@ -136,6 +127,11 @@ a#contact{
 @media (min-width: 768px){
   span#navDot, .nav-background{
     display: none;
+  }
+
+  a#contact{
+    cursor: pointer;
+    float: right;
   }
 }
 

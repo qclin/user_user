@@ -30,7 +30,6 @@ $(document).ready(function(){
     for(var i = 0; i< fields.length; i++){
       var value = fields[i]
       if(isBlank(value)){
-        debugger;
         $('input').eq(i).siblings('.marker').eq(i).css('background', '#ff2700');
       }
     }

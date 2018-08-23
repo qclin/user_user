@@ -27,9 +27,9 @@
   line-height: 17px;
 }
 
-.menu-item{
+.title, .menu-item{
   font-family: 'Apercu-Bold';
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   line-height: initial;
 }
