@@ -24,8 +24,15 @@ hr{
   }
 }
 @media (min-width: 768px){
+    div.methodologies{
+      margin: 60px 30px;
+    }
   ul.methodology li{
+    margin-right: 60px;
     margin-bottom: 60px;
+    width: calc(50% - 60px);
+    display: inline-block;
+
   }
   .mobile{
     display: none;
@@ -68,13 +75,8 @@ hr{
   #stickySide{
     display: none;
   }
-  ul.methodology{
-    width: 74%;
-    margin-left: 60px;
-  }
-  div.methodologies{
-    margin-top: 60px;
-  }
+
+
 }
 
 /* Larger than Desktop HD */
@@ -102,11 +104,5 @@ hr{
   }
   .main-text{
     width: 50%;
-  }
-
-  ul.methodology{
-    width: 66%;
-    float: right;
-
   }
 }

@@ -7,7 +7,7 @@ $(document).ready(function(){
     // var imageList = imageUrls.filter(url => url.indexOf('services') != -1)
     console.log(" Image source ---- ", imageSrc)
 
-    // TODO:// only load the carousel image of selection 
+    // TODO:// only load the carousel image of selection
     $('#about-carousel .carousel-image img').attr('src', imageSrc);
     $('.service-images').animate({opacity: 0}, 10)
     $('.service-images').eq(position).animate({opacity: 1}, 10);
