@@ -32,6 +32,7 @@ body.inverse{
 }
 .main-text, .main-text p{
   margin-top: 0;
+  margin-bottom: 0; 
 }
 .logo-wrapper{
   margin-left: 30px;
@@ -49,7 +50,7 @@ body.inverse{
 }
 
 span.marker{
-  margin-top: 22px;
+  margin-top: 15px;
   display: block;
 }
 .carousel-image img{
@@ -58,7 +59,7 @@ span.marker{
   z-index: -1000;
   top: 0;
   max-width: 100%;
-  min-height: 89vh;
+  height: calc(100% - 80px);
   object-fit: cover;
 
 }
@@ -66,7 +67,7 @@ span.marker{
   position: absolute;
   color: #000;
   margin-left: 30px;
-  bottom: 60px;
+  bottom: 30px;
   width: -webkit-fill-available;
   text-align: right;
   margin-right: 30px;

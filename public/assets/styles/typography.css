@@ -1,9 +1,62 @@
+@font-face {
+  font-family: 'Apercu-Bold';
+    src: url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Bold/Apercu-Bold.eot?#iefix') format('embedded-opentype');
+    src:  url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Bold/Apercu-Bold.woff') format('woff');
+    src:  url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Bold/Apercu-Bold.ttf')  format('truetype');
+    src:  url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Bold/Apercu-Bold.svg#Apercu-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu-Regular';
+     src:  url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Regular/Apercu-Regular.eot?#iefix') format('embedded-opentype');
+     src:  url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Regular/Apercu-Regular.woff') format('woff');
+     src:  url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Regular/Apercu-Regular.ttf')  format('truetype');
+     src:  url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Regular/Apercu-Regular.svg#Apercu-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu-Light';
+  src: url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Light/Apercu-Light.eot?#iefix') format('embedded-opentype');
+     src: url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Light/Apercu-Light.otf')  format('opentype');
+     src: url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Light/Apercu-Light.woff') format('woff');
+     src: url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Light/Apercu-Light.ttf')  format('truetype');
+     src: url('https://s3.eu-central-1.amazonaws.com/userlanding/assets/fonts/Apercu-Light/Apercu-Light.svg#Apercu-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu-Medium';
+    src: url('./fonts/Apercu-Medium/Apercu-Medium.eot?#iefix') format('embedded-opentype');
+    src:  url('./fonts/Apercu-Medium/Apercu-Medium.woff') format('woff');
+    src:  url('./fonts/Apercu-Medium/Apercu-Medium.ttf')  format('truetype');
+    src:  url('./fonts/Apercu-Medium/Apercu-Medium.svg#Apercu-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks-Bold';
+     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.eot?#iefix') format('embedded-opentype');
+     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.woff') format('woff');
+     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.ttf')  format('truetype');
+     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .logo{
   font-family: 'SuisseWorks-Bold';
   font-size: 88px;
   line-height: 100px;
   margin: 0;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
+
 }
 
 .mobile .logo{
@@ -22,98 +75,64 @@
 }
 
 .tagline{
-  font-family: 'Apercu-Regular';
+  font-family: 'Apercu-Regular' !important;
   font-size: 12px;
   line-height: 17px;
 }
 
 .title, .menu-item{
   font-family: 'Apercu-Bold';
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
   line-height: initial;
 }
 
 /* header */
 header{
-  font-family: 'Apercu-Regular';
+  font-family: 'Apercu-Regular' !important;
   font-size: 18px;
   line-height: 23px;
 }
 
 /* subheader */
 .subheader{
-  font-family: 'Apercu-Regular';
+  font-family: 'Apercu-Regular' !important;
   font-size: 18px;
   line-height: 23px;
 }
 
 body{
-  font-family: 'Apercu-Regular';
+  font-family: 'Apercu-Regular' !important;
   font-size: 18px;
   line-height: 23px;
 }
 
 @media (min-width: 320px) and (max-width: 767px){
   body{
-    font-family: 'Apercu-Regular';
+    font-family: 'Apercu-Regular' !important;
     font-size: 15px;
     line-height: 19px;
   }
 
 }
+
 p{
-    font-family: 'Apercu-Regular';
+    font-family: 'Apercu-Regular' !important;
     font-size: 15px;
     line-height: 19px;
 }
 p.block{
-  font-family: 'Apercu-Regular';
+  font-family: 'Apercu-Regular' !important;
   font-size: 12px;
   line-height: 17px;
 }
-
+.main-text p{
+    font-family: 'Apercu-Regular' !important;
+    font-size: 18px;
+    line-height: 23px;
+}
 caption, footer, .error-message{
-  font-family: 'Apercu-Regular';
+  font-family: 'Apercu-Regular' !important;
   font-size: 12px;
   line-height: 17px;
-}
-
-@font-face {
-  font-family: 'Apercu-Bold';
-  src: url('./fonts/Apercu-Bold.eot?#iefix') format('embedded-opentype');
-    /* url('Apercu-Bold.otf')  format('x-font-opentype'), */
- src:  url('./fonts/Apercu-Bold.woff') format('woff');
- src:  url('./fonts/Apercu-Bold.ttf')  format('truetype');
- src:  url('./fonts/Apercu-Bold.svg#Apercu-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Apercu-Regular';
-     src:  url('./fonts/Apercu-Regular.eot?#iefix') format('embedded-opentype');
-    /*  src:  url('./fonts/Apercu-Regular.otf')  format('x-font-opentype'), */
-     src:  url('./fonts/Apercu-Regular.woff') format('woff');
-     src:  url('./fonts/Apercu-Regular.ttf')  format('truetype');
-     src:  url('./fonts/Apercu-Regular.svg#Apercu-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* src:  src:  url('./fonts/Value-Serif/Value-Serif.eot?#iefix')
- format('embedded-opentype'),
-   src:  url('Value-Serif.woff') format('woff'),
-   src:  url('Value-Serif.ttf')  format('truetype'),
-   src:  url('Value-Serif.svg#Value-Serif') format('svg'); */
-
-@font-face {
-  font-family: 'SuisseWorks-Bold';
-     src:  url('./fonts/SuisseWorks-Bold.eot?#iefix') format('embedded-opentype');
-    /*  src:  url('./fonts/SuisseWorks-Bold.otf')  format('x-font-opentype'), */
-     src:  url('./fonts/SuisseWorks-Bold.woff') format('woff');
-     src:  url('./fonts/SuisseWorks-Bold.ttf')  format('truetype');
-     src:  url('./fonts/SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }

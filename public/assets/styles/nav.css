@@ -14,8 +14,11 @@ body.fixed{
   color: inherit;
 }
 .tab-container{
-  width: 25%;
+  width: 20%;
   display: inline-block;
+}
+.tab-container:last-of-type{
+    width: 40%; 
 }
 .tablink.open{
   border-bottom: 4px #00FF00 solid;
