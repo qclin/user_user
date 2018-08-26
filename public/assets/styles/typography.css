@@ -81,27 +81,27 @@ caption, footer, .error-message{
 
 @font-face {
   font-family: 'Apercu-Bold';
-  src: url('/fonts/Apercu-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('./fonts/Apercu-Bold.eot?#iefix') format('embedded-opentype');
     /* url('Apercu-Bold.otf')  format('x-font-opentype'), */
- src:  url('/fonts/Apercu-Bold.woff') format('woff');
- src:  url('/fonts/Apercu-Bold.ttf')  format('truetype');
- src:  url('/fonts/Apercu-Bold.svg#Apercu-Bold') format('svg');
+ src:  url('./fonts/Apercu-Bold.woff') format('woff');
+ src:  url('./fonts/Apercu-Bold.ttf')  format('truetype');
+ src:  url('./fonts/Apercu-Bold.svg#Apercu-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Apercu-Regular';
-     src:  url('/fonts/Apercu-Regular.eot?#iefix') format('embedded-opentype');
-    /*  src:  url('/fonts/Apercu-Regular.otf')  format('x-font-opentype'), */
-     src:  url('/fonts/Apercu-Regular.woff') format('woff');
-     src:  url('/fonts/Apercu-Regular.ttf')  format('truetype');
-     src:  url('/fonts/Apercu-Regular.svg#Apercu-Regular') format('svg');
+     src:  url('./fonts/Apercu-Regular.eot?#iefix') format('embedded-opentype');
+    /*  src:  url('./fonts/Apercu-Regular.otf')  format('x-font-opentype'), */
+     src:  url('./fonts/Apercu-Regular.woff') format('woff');
+     src:  url('./fonts/Apercu-Regular.ttf')  format('truetype');
+     src:  url('./fonts/Apercu-Regular.svg#Apercu-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-/* src:  src:  url('/fonts/Value-Serif/Value-Serif.eot?#iefix')
+/* src:  src:  url('./fonts/Value-Serif/Value-Serif.eot?#iefix')
  format('embedded-opentype'),
    src:  url('Value-Serif.woff') format('woff'),
    src:  url('Value-Serif.ttf')  format('truetype'),
@@ -109,11 +109,11 @@ caption, footer, .error-message{
 
 @font-face {
   font-family: 'SuisseWorks-Bold';
-     src:  url('/fonts/SuisseWorks-Bold.eot?#iefix') format('embedded-opentype');
-    /*  src:  url('/fonts/SuisseWorks-Bold.otf')  format('x-font-opentype'), */
-     src:  url('/fonts/SuisseWorks-Bold.woff') format('woff');
-     src:  url('/fonts/SuisseWorks-Bold.ttf')  format('truetype');
-     src:  url('/fonts/SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
+     src:  url('./fonts/SuisseWorks-Bold.eot?#iefix') format('embedded-opentype');
+    /*  src:  url('./fonts/SuisseWorks-Bold.otf')  format('x-font-opentype'), */
+     src:  url('./fonts/SuisseWorks-Bold.woff') format('woff');
+     src:  url('./fonts/SuisseWorks-Bold.ttf')  format('truetype');
+     src:  url('./fonts/SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
