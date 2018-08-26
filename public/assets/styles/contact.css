@@ -70,6 +70,14 @@ input#send{
     margin-bottom: 0;
 }
 
+input#send:hover{
+    background: url('/icons/Paper_planes-green.svg') no-repeat top left;
+    width: 4em;
+    height: 3em;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
 .error-message{
   color: #FF2700;
   display: none;
