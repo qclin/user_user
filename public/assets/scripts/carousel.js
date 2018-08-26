@@ -24,6 +24,8 @@ function loadCarousel(){
       $('#about-carousel .carousel-image caption').text(captions[selectedImage.index])
       $('body').addClass('inverse');
     }
+
+    
 }
 
 function getImageForPage(imageUrls, page){

@@ -1,16 +1,11 @@
 $(document).ready(function(){
   $('.services li').hover(function(){
+
     $(this).find('.marker').toggleClass('tinted')
     $(this).siblings().find('.tinted').toggleClass('tinted')
     var imageSrc = $(this).find('img').attr('src')
     var position = $('.services li').index(this)
-    // var imageList = imageUrls.filter(url => url.indexOf('services') != -1)
-    console.log(" Image source ---- ", imageSrc)
-
-    // TODO:// only load the carousel image of selection
-    $('#about-carousel .carousel-image img').attr('src', imageSrc);
-    $('.service-images').animate({opacity: 0}, 10)
-    $('.service-images').eq(position).animate({opacity: 1}, 10);
+    $('#service-carousel img.service-image').attr('src', imageSrc);
     if($(window).width() > 768){
       $('body').addClass('inverse');
     }

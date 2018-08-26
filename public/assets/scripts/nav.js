@@ -11,31 +11,24 @@ $(document).ready( function(){
     }
   }, 1);
 
-  if(link == '#about'){
-    $('footer').hide();
-  }else{
-    $('footer').show();
-  }
 
   $('.tablink').click(function(){
     $('.tabcontent').hide();
     $('.tablink').removeClass('open');
     $('.tablink').css('background', '');
     $(this).addClass('open');
+
     var pageName = this.dataset.value
-    if(pageName == 'about'){
-      $('footer').hide();
-    }else{
-      $('footer').show();
-    }
+    var leavePage = window.location.hash.substring(1)
+    $('body').removeClass(`${leavePage}Page`);
+    $('body').addClass(`${pageName}Page`);
 
-    if(pageName != 'services' || $(window).width() < 769){
-      $('.service-images').css('opacity', '0');
-      $('footer').removeClass('locked');
+    //TODO   clean here, move into CSS
 
-    }else{
-      $('footer').addClass('locked');
+    if(pageName != 'services'){
+        $('#service-carousel img.service-image').attr('src', '');
     }
+    
     $(`#${pageName}-page`).show();
 
     loadCarousel();
@@ -62,11 +55,6 @@ function toggleNav(){
   $('body').toggleClass('fixed');
   $('span.navDot').toggleClass('pop');
 }
-
-// function closeNav(){
-//     $('nav').removeClass('open-popup');
-//   $('body').removeClass('fixed');
-// }
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 250 && $(window).width() > 769){

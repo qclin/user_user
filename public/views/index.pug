@@ -72,11 +72,8 @@ html
                   p #{item.description}
                 span.marker
             
-    section#service-carousel
-      div.carousel-image 
-        each val in imgFiles      
-          if val.indexOf('services') != -1 
-            img.service-images(src=val)
+          div#service-carousel
+            img.service-image
 
 
     include partials/contact.pug

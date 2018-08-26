@@ -13,8 +13,8 @@ body, html {
 body.inverse{
   color: #fff
 }
-#about-page {
-  /* background-color: red; */
+.aboutPage footer{
+    display: none;
 }
 #philosophy-page {
   /* background-color: green; */
@@ -32,7 +32,7 @@ body.inverse{
 }
 .main-text, .main-text p{
   margin-top: 0;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 .logo-wrapper{
   margin-left: 30px;
@@ -58,10 +58,9 @@ span.marker{
   position: absolute;
   z-index: -1000;
   top: 0;
-  max-width: 100%;
+  min-width: 100%;
   height: calc(100% - 80px);
   object-fit: cover;
-
 }
 .carousel-image caption{
   position: absolute;
@@ -73,6 +72,16 @@ span.marker{
   margin-right: 30px;
   padding-bottom: 15px;
   border-bottom: 1.2px solid;
+}
+
+img.service-image{
+  left: 0;
+  position: absolute;
+  z-index: -1000;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 165px);
+  object-fit: cover;
 }
 
 ul.services{
@@ -129,17 +138,17 @@ ul.services li{
   height: 100%;
 }
 
-#service-carousel{
-  z-index: -1000;
-}
-
-#service-carousel img{
-
+.philosophyPage caption{
+    border-bottom: none;
 }
 
 #philosophy-page .main-text{
   display: block;
   margin: auto;
+}
+
+#philosophy-page.tabcontent .row:first-of-type{
+    height: 70vh;
 }
 .methodologies{
   position: relative;
@@ -172,21 +181,23 @@ ul.methodology{
 }
 @media (min-width:768px){
     .service-intro{
-      margin: 30px;
-      margin-bottom: 60px;
+      margin: 0 30px 30px 30px;
       width: 338px;
+      line-height: 23px;
+      font-size: 18px;
     }
     footer{
-        width: 100%;
+        height: 50px;
         margin: 0 30px;
         border-top: 1.2px solid #000;
+    }
+
+    .servicesPage .tabcontent{
+        height: -webkit-fill-available;
     }
 }
 
 @media (min-width: 320px) and (max-width: 767px){
-    #philosophy-page.tabcontent{
-        /* border-bottom: 1.2px solid #000; */
-    }
     footer .column{
         margin-bottom: 12px;
     }
@@ -258,4 +269,6 @@ ul.methodology{
     .methodology .subheader{
         margin: 30px 15px;
     }
+
+
 }
