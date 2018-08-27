@@ -136,6 +136,11 @@ nav a:hover{
     z-index: 100;
     display: block;
   }
+
+  .tablink, a#contact{
+      display: block;
+      width: 100%;
+  }
 }
 
 @media (min-width: 768px){

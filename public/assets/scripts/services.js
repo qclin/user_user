@@ -5,7 +5,11 @@ $(document).ready(function(){
     $(this).siblings().find('.tinted').toggleClass('tinted')
     var imageSrc = $(this).find('img').attr('src')
     var position = $('.services li').index(this)
-    $('#service-carousel img.service-image').attr('src', imageSrc);
+    var displayImage = $('#service-carousel img.service-image')
+    if(displayImage.is(':hidden')){
+        displayImage.show();
+    }
+    displayImage.attr('src', imageSrc);
     if($(window).width() > 768){
       $('body').addClass('inverse');
     }

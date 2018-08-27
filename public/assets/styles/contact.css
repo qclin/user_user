@@ -42,6 +42,12 @@
   white-space: pre;
   margin-top: 10px;
 }
+#contact-modal p.block a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
 label{
   text-transform: uppercase;
   margin: 0;
@@ -70,17 +76,36 @@ input#send{
     margin-bottom: 0;
 }
 
-input#send:hover{
+input#send:hover,
+input#send.success{
     background: url('/icons/Paper_planes-green.svg') no-repeat top left;
     width: 4em;
     height: 3em;
     background-size: cover;
     margin-bottom: 0;
 }
+input#send.error{
+    background: url('/icons/Paper_planes-red.svg') no-repeat top left;
+    width: 4em;
+    height: 3em;
+    background-size: cover;
+    margin-bottom: 0;
+}
+.marker-error{
+    background: #ff2700;
+}
 
+.error-network,
 .error-message{
   color: #FF2700;
   display: none;
+  font-size: 12px;
+}
+
+.success-message{
+    color: #00FF23;
+    display: none;
+    font-size: 12px;
 }
 form .marker{
   position: absolute;

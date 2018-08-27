@@ -6,7 +6,7 @@ section#contact-modal
   .one-half.column#address
     .menu-item ADDRESS
     p.block
-      |info@usergroupcoop.com
+      a(href="mailto:info@usergroupcoop.com") info@usergroupcoop.com
       | 71-75 Shelton Street
       | Covent Garden
       | WC2H 9JQ
@@ -29,6 +29,6 @@ section#contact-modal
     textarea
     input(type="submit" value="" id="send") 
     span.error-message Sorry, your message has not been sent due to an error in one of the above fields
-  
-
+    span.success-message Your message has been sent
+    span.error-network Due to network error, please send inquiry via info@usergroupcoop.com
 script(type='text/javascript', src='/scripts/contact.js')

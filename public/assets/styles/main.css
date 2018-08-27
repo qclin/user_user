@@ -16,8 +16,8 @@ body.inverse{
 .aboutPage footer{
     display: none;
 }
-#philosophy-page {
-  /* background-color: green; */
+#philosophy-page .main-text p {
+    margin-bottom: 23px;
 }
 #services-page footer{
   position: absolute;
@@ -95,7 +95,7 @@ ul.services li{
   position: relative;
 }
 
-
+.methodology .subheader,
 .services .subheader{
   cursor: pointer;
 }
@@ -147,9 +147,7 @@ ul.services li{
   margin: auto;
 }
 
-#philosophy-page.tabcontent .row:first-of-type{
-    height: 70vh;
-}
+
 .methodologies{
   position: relative;
   margin-top: 60px;
@@ -194,6 +192,10 @@ ul.methodology{
 
     .servicesPage .tabcontent{
         height: -webkit-fill-available;
+    }
+
+    #philosophy-page.tabcontent .row:first-of-type{
+        height: 70vh;
     }
 }
 

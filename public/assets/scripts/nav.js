@@ -26,9 +26,9 @@ $(document).ready( function(){
     //TODO   clean here, move into CSS
 
     if(pageName != 'services'){
-        $('#service-carousel img.service-image').attr('src', '');
+        $('#service-carousel img.service-image').hide()
     }
-    
+
     $(`#${pageName}-page`).show();
 
     loadCarousel();
