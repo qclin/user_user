@@ -1,16 +1,24 @@
 $(document).ready( function(){
   var link = location.hash
   var subTabs = ['#about', '#services', '#philosophy', '#contact']
+
+  clearLoadingPage();
   setTimeout(function(){
+    loadComponents()
     if(subTabs.indexOf(link) > -1){
       $(`[data-value=${link.substring(1)}]`).eq(0)[0].click();
-    }else if(link.indexOf('philosophy') > -1){
-      $('[data-value="philosophy"]').eq(0)[0].click();
     }else{
-      $("#defaultOpen").click();
-    }
-  }, 1);
 
+      setTimeout(openTab, 1000);
+    }
+}, 1000);
+
+// Logo transition
+if($(window).width() < 769){
+    $("h1.flat-link.logo a").animate({'opacity': 0}, 1000,function() {
+      $(this).text("ug")
+  }).animate({'opacity': 1}, 30);
+}
 
   $('.tablink').click(function(){
     $('.tabcontent').hide();
@@ -20,6 +28,9 @@ $(document).ready( function(){
 
     var pageName = this.dataset.value
     var leavePage = window.location.hash.substring(1)
+    if(leavePage.length == 0){
+        leavePage = 'about'
+    }
     $('body').removeClass(`${leavePage}Page`);
     $('body').addClass(`${pageName}Page`);
 
@@ -48,6 +59,32 @@ $(document).ready( function(){
   });
 
 });
+
+
+function openTab(){
+    $("#defaultOpen").click();
+}
+function clearLoadingPage(){
+    if($(window).width() < 769){
+        $('.navDot').hide();
+    }else{
+        $('nav').hide();
+    }
+    $('footer').hide(); 
+}
+
+function loadComponents(){
+    if($(window).width() < 769){
+        $('.flat-link').show();
+        $('.navDot').show();
+    }else{
+        $('nav').show();
+    }
+    if(location.hash && location.hash != '#about'){
+        $('footer').show();
+    }
+    $('.loader').hide().fadeOut('slow')
+}
 
 
 function toggleNav(){

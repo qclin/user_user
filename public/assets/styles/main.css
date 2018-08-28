@@ -9,10 +9,20 @@ body, html {
   margin: 0;
 }
 
+.loader{
+    width: 45px;
+    height: 45px;
+    background: #00FF23;
+    border-radius: 23px;
+    margin: 30px;
+    top: 30vh;
+    position: relative;
+}
 
 body.inverse{
   color: #fff
 }
+
 .aboutPage footer{
     display: none;
 }
@@ -53,6 +63,7 @@ span.marker{
   margin-top: 15px;
   display: block;
 }
+
 .carousel-image img{
   left: 0;
   position: absolute;
@@ -273,4 +284,19 @@ ul.methodology{
     }
 
 
+    .loader{
+        top: calc(100vh - 80px);
+        right: -6px;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        padding: 0;
+        z-index: 10;
+        position: absolute;
+        -webkit-transition: display .8s ease-out;
+        -moz-transition: display .8s ease-out;
+        -o-transition: display .8s ease-out;
+        -ms-transition: display .8s ease-out;
+        transition: display .8s ease-out;
+    }
 }
