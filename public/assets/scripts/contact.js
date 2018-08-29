@@ -21,14 +21,6 @@ $(document).ready(function(){
       }
   });
 
-  // $('input').blur(function(){
-  //     if($(this).prev('.marker').hasClass('.error-marker') &&
-  //       !isBlank($(this).val())
-  //       ){
-  //         $(this).prev('.marker').removeClass('.error-marker')
-  //     }
-  // })
-
   $('#contactForm').submit(function(e){
     e.preventDefault();
 
@@ -40,7 +32,6 @@ $(document).ready(function(){
         url = $form.attr('action')
 
     var body = { name, email, subject, message}
-    console.log("Body : ", body)
     var fields = [name, email, subject, message]
     for(var i = 0; i< fields.length; i++){
       var value = fields[i]
@@ -59,10 +50,6 @@ $(document).ready(function(){
           data: JSON.stringify(body),
           contentType: 'application/json'
         }).done(function(data){
-          // var content = $(data).find('#content');
-          // $("#result").empty().append(content);
-          console.log("posting is done ---- ", data)
-
           $('input#send').addClass('success');
           $('.success-message').show();
           $('input').val('');

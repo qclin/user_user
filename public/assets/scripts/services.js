@@ -17,11 +17,7 @@ $(document).ready(function(){
 
   $('.services .subheader').click(function(){
     $(this).siblings('.content').toggle();
-    // if($(window).width() < 769){
-      /// whether this is can be mobile only
       $(this).parent().siblings().find('.content').hide();
-    // }
-
   });
 
   var width = $( document ).width();
@@ -31,14 +27,4 @@ $(document).ready(function(){
           $(this).parent().siblings().find('.content').hide();
       });
   }
-
-  // if(768 < width && width < 1024){
-  //
-  //   console.log(' here --- ', width)
-  //   $('.services li').removeClass('one-third');
-  //   $('.services li').addClass('one-half');
-  // }
-  // $(window).resize(function(){
-  //   console.log($( window ).width() )
-  // })
 })

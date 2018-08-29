@@ -56,7 +56,6 @@ function getImageForPage(page){
         imageList = philosophySet
     }
 
-    console.log("carousel ---- -", imageList)
       var index = Math.floor(Math.random()*imageList.length)
       var imageItem = imageList[index];
       return imageItem

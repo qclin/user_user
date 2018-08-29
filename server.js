@@ -25,14 +25,6 @@ var router = express.Router();
 app.use('/sayHello', router);
 router.post('/', mailer.sayHello);
 
-// var jsonParser = bodyParser.json()
-//
-// app.post('/sayHello', function(req, res){
-// 		console.log("POST sayHello", req.body)
-// 		console.log(req)
-// });
-
-
 app.listen(3000, () => console.log('listening on 3000 '))
 
 
