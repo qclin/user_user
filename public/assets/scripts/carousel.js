@@ -19,7 +19,7 @@ function loadCarousel(){
         $('#about-carousel .carousel-image').append('<caption>');
       }
       var captions = ['Ciliwung River, Jakarta, Indonesia (2016)', 'Place two year 2', 'place three, year 3']
-      var selectedImage = getImageForPage(imageUrls, currentPage)
+      var selectedImage = getImageForPage(currentPage)
       $('#about-carousel .carousel-image img').attr('src', selectedImage.image).fadeIn("slow")
       $('#about-carousel .carousel-image caption').text(captions[selectedImage.index])
       $('body').addClass('inverse');
@@ -28,7 +28,15 @@ function loadCarousel(){
 
 }
 
-function getImageForPage(imageUrls, page){
+function getImageForPage(page){
+    var imageUrls = [
+        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/1_about_usergroup.jpg",
+        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/2_about_usergroup.jpg",
+        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/3_about_usergroup.jpg",
+        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/1_philosophy_usergroup.jpg",
+        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/2_philosophy_usergroup.jpg",
+        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/3_philosophy_usergroup.jpg"
+    ]
   var imageList = imageUrls.filter(url => url.indexOf(page) != -1)
   var index = Math.floor(Math.random()*imageList.length)
   var image = imageList[index];
