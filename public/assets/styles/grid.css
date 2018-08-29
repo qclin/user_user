@@ -30,7 +30,15 @@ hr{
     margin-bottom: 60px;
     width: calc(50% - 60px);
     display: inline-block;
+  }
 
+  ul.methodology li:first-of-type p:first-of-type{
+      margin-bottom: 0;
+  }
+  ul.methodology li:first-of-type p:nth-of-type(2),
+  ul.methodology li:first-of-type p:nth-of-type(3){
+      margin: 0;
+      text-indent: 30px;
   }
   .mobile{
     display: none;
@@ -67,7 +75,7 @@ hr{
   }
   .main-text{
     min-width: 475px;
-    width: 50%;
+    width: 38%;
   }
 
   #stickySide{
