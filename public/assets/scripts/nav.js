@@ -70,7 +70,7 @@ function clearLoadingPage(){
     }else{
         $('nav').hide();
     }
-    $('footer').hide(); 
+    $('footer').hide();
 }
 
 function loadComponents(){
@@ -80,9 +80,8 @@ function loadComponents(){
     }else{
         $('nav').show();
     }
-    if(location.hash && location.hash != '#about'){
-        $('footer').show();
-    }
+
+    $('footer').show();
     $('.loader').hide().fadeOut('slow')
 }
 

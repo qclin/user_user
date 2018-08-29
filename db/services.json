@@ -1,33 +1,33 @@
 {
-  "about": " Our team provides a range of expertise and services, including:",
+  "about": "Our team provides a range of expertise and services, including:",
   "services":[
     { "title":"Geospatial Data Collection",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/GeospatialDataCollection_services_usergroup.jpg",
-      "description": "Geographic information is the collection of information about places and events that occur on the Earth's surface. Geographic information science (GIScience) is the study of organizations and tools associated with the process of collecting and disseminating geographic information. "
+      "description": "coordinating the collection of geospatial data from complex urban environments regarding resident activities, environmental transformations, or infrastructure performance"
     },{ "title":"Geospatial Platform Development",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/GeospatialPlatformDevelopment_services_usergroup.jpg",
-      "description": "The GeoPlatform provides shared and trusted geospatial data, services, and applications for use by the public and by government agencies and partners to meet their mission needs."
+      "description": "designing and developing new platforms for the use existing geospatial data"
     },{ "title":"Crowdsourcing Platform Development",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/CrowdsourcingPlatformdev_services_usergroup.jpg",
-      "description": "The term crowdsourcing is a contraction of crowd and outsourcing, which appeared for the first time in 2006, when Jeff Howe published the article The Rise of Crowdsourcing in Wired. This quote from the article describes very simply what crowdsourcing is and how it's made possible by technological advances:"
+      "description": "designing and developing platforms for crowdsourcing information as part of public campaigns or urban cooperation efforts"
     },{ "title":"Location-based Alerts & Services",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/LocationbasedAlerts_services_usergroup.jpg",
-      "description": "Now the productive potential of millions of plugged-in enthusiasts is attracting the attention of old-line businesses, too. For the last decade or so, companies have been looking overseas, to India or China, for cheap labor. But now it doesn't matter where the laborers are – they might be down the block, they might be in Indonesia – as long as they are connected to the network."
-    },{ "title":"Critical Asset Surveys ",
-      "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/CriticalAssetSurveys_services_usergroup.jpg",
-      "description": "ALL facilities are directed to review their Critical Asset Survey data to ensure that it contains accurate and UTD information - AND to answer any newly added questions. This includes the Baseline form PLUS the two supplemental forms (Surge and Resilience) included in this HERDS Activity."
-    },{ "title":"Institutional Anthropology",
+      "description": "developing bespoke alerts or notification processes based on existing data, and designing and developing data collection to initiate alerts or early warning systems"
+    },{ "title":"Aero-spatial Data Collection",
+      "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/aerospatial.jpg",
+      "description": "coordinating the collection and processing of aerospatial data with unmanned aerial vehicles"
+    },{ "title":"Institutional Ethnography",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/InstitutionalAnthropology_services_usergroup.jpg",
-      "description": "The role of anthropology in institutions has expanded significantly since the end of the 20th century.[1] Much of this development can be attributed to the rise in anthropologists working outside of academia and the increasing importance of globalization in both institutions and the field of anthropology.[1] Anthropologists can be employed by institutions such as for-profit business, nonprofit organizations, and governments.[1] For instance, cultural anthropologists are   commonly employed by the United States federal government.[1]"
+      "description": "co-researching technical needs with organizations or institutions preparing to invest in digital infrastructure, as well as ongoing co-research with collaborators regarding tools in-the-making as a part of design and development "
     },{ "title":"Economic Assessments",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/EconomicAssessments_services_usergroup.jpg",
-      "description": "There is increasing recognition that environment and health impacts often require valuation in economic terms in order to receive adequate consideration in policy. An integrated economic analysis of such impacts can capture the hidden costs and benefits of policy options, as well as the synergies and institutional economies of scale that may be achieved through complementary policies that support sustainable development."
+      "description": "coordinating economic assessments of infrastructure or other urban projects, or developing analytic tools for assessing the projective value of digital infrastructure investments"
     },{ "title":"Technical Performance Evaluations",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/TechnicalPerformanceEvaluations_services_usergroup.jpg",
-      "description": "Annual performance evaluations have a negative connotation for one simple reason: they only occur once every year. Almost by nature, this creates an environment in which all feedback is given during these review periods, often including input from people cross-functionally who can't fully speak to a particular developer's work."
+      "description": "coordinating data collection to evaluate the performance of technical urban systems"
     },{ "title":"Technical Assistance & Recommendations",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/TechnicalAssistance_services_usergroup.jpg",
-      "description": "The aim of technical assistance is to maximise the quality of project implementation and impact by supporting administration, management, policy development, capacity building, etc."
+      "description": "designing and developing protocols for the usage and maintenance of digital infrastructure, coordinating technical reviews and preparing technical procurement packages, developing recommendations or reviews for digital infrastructure procurement"
     }
   ]
 }

@@ -20,8 +20,8 @@ function loadCarousel(){
       }
       var captions = ['Ciliwung River, Jakarta, Indonesia (2016)', 'Jakarta, Indonesia (2016)', 'Jakarta, Indonesia (2016)']
       var selectedImage = getImageForPage(currentPage)
-      $('#about-carousel .carousel-image img').attr('src', selectedImage.image).fadeIn("slow")
-      $('#about-carousel .carousel-image caption').text(captions[selectedImage.index])
+      $('#about-carousel .carousel-image img').attr('src', selectedImage.url).fadeIn("slow")
+      $('#about-carousel .carousel-image caption').text(selectedImage.info)
       $('body').addClass('inverse');
     }
 
@@ -29,16 +29,35 @@ function loadCarousel(){
 }
 
 function getImageForPage(page){
-    var imageUrls = [
-        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/1_about_usergroup.jpg",
-        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/2_about_usergroup.jpg",
-        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/3_about_usergroup.jpg",
-        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/1_philosophy_usergroup.jpg",
-        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/2_philosophy_usergroup.jpg",
-        "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/3_philosophy_usergroup.jpg"
-    ]
-  var imageList = imageUrls.filter(url => url.indexOf(page) != -1)
-  var index = Math.floor(Math.random()*imageList.length)
-  var image = imageList[index];
-  return {index, image}
+    var aboutSet = [{
+        'info': "Irrawaddy River, Myin Ka Bar, Yangon (2014)",
+        'url':"https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/1_about_usergroup.jpg"
+    }, {
+        'info': "Water level sensor installation, Jakarta, Indonesia (2016)",
+        'url':"https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/2_about_usergroup.jpg"
+    }, {
+        'info': "Marunda Rasunawan, Jakarta, Indonesia (2013)",
+        'url': "https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/3_about_usergroup.jpg"
+    }]
+    var philosophySet = [{
+        'info': "Sulphur mining, Banyuwangi Regency, Indonesia (2014)",
+        'url': "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/1_philosophy_usergroup.jpg"
+    }, {
+        'info': "Tanjung Priok, Jakarta, Indonesia (2016)",
+        'url': "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/2_philosophy_usergroup.jpg"
+    }, {
+        'info': "Kampung Pulo, Jakarta, Indonesia (2016)",
+        'url': "https://s3.eu-central-1.amazonaws.com/userlanding/assets/philosophy/3_philosophy_usergroup.jpg"
+    }]
+
+    var imageList = aboutSet
+
+    if(page == 'philosophy'){
+        imageList = philosophySet
+    }
+
+    console.log("carousel ---- -", imageList)
+      var index = Math.floor(Math.random()*imageList.length)
+      var imageItem = imageList[index];
+      return imageItem
 }
