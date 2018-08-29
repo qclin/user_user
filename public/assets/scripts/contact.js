@@ -52,7 +52,6 @@ $(document).ready(function(){
     }
 
     if(isEmail(email) && !$('input#send').hasClass('error')){
-        console.log(' alll goood ---- ')
 
         $.ajax({
           type:'POST',
