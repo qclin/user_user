@@ -18,7 +18,7 @@ function loadCarousel(){
       if($('#about-carousel .carousel-image').find('caption').length == 0){
         $('#about-carousel .carousel-image').append('<caption>');
       }
-      var captions = ['Ciliwung River, Jakarta, Indonesia (2016)', 'Place two year 2', 'place three, year 3']
+      var captions = ['Ciliwung River, Jakarta, Indonesia (2016)', 'Jakarta, Indonesia (2016)', 'Jakarta, Indonesia (2016)']
       var selectedImage = getImageForPage(currentPage)
       $('#about-carousel .carousel-image img').attr('src', selectedImage.image).fadeIn("slow")
       $('#about-carousel .carousel-image caption').text(captions[selectedImage.index])

@@ -25,6 +25,7 @@ hr{
       margin: 90px 30px 0 30px
     }
   ul.methodology li{
+      vertical-align: text-top;
     margin-right: 60px;
     margin-bottom: 60px;
     width: calc(50% - 60px);
