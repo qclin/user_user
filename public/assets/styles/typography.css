@@ -41,10 +41,10 @@
 
 @font-face {
   font-family: 'SuisseWorks-Bold';
-     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.eot?#iefix') format('embedded-opentype');
-     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.woff') format('woff');
-     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.ttf')  format('truetype');
-     src:  url('./fonts/SuisseWorks-Bold/SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
+     src:  url('../fonts/SuisseWorks-Bold/SuisseWorks-Bold.eot?#iefix') format('embedded-opentype');
+     src:  url('../fonts/SuisseWorks-Bold/SuisseWorks-Bold.woff') format('woff');
+     src:  url('../fonts/SuisseWorks-Bold/SuisseWorks-Bold.ttf')  format('truetype');
+     src:  url('../fonts/SuisseWorks-Bold/SuisseWorks-Bold.svg#SuisseWorks-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
