@@ -20,7 +20,16 @@ function loadCarousel(){
       }
       var captions = ['Ciliwung River, Jakarta, Indonesia (2016)', 'Jakarta, Indonesia (2016)', 'Jakarta, Indonesia (2016)']
       var selectedImage = getImageForPage(currentPage)
-      $('#about-carousel .carousel-image img').attr('src', selectedImage.url).fadeIn("slow")
+      // $('#about-carousel .carousel-image img').attr('src', selectedImage.url).fadeIn("slow")
+
+      var downloadingImage = new Image();
+      downloadingImage.onload = function(){
+          $('#about-carousel .carousel-image img').attr('src', this.src).fadeIn(800)
+      };
+      downloadingImage.src = selectedImage.url
+
+
+
       $('#about-carousel .carousel-image caption').text(selectedImage.info)
       $('body').addClass('inverse');
     }
