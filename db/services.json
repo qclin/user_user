@@ -3,31 +3,31 @@
   "services":[
     { "title":"Geospatial Data Collection",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/GeospatialDataCollection_services_usergroup.jpg",
-      "description": "coordinating the collection of geospatial data from complex urban environments regarding resident activities, environmental transformations, or infrastructure performance"
+      "description": "Coordinating the collection of geospatial data from complex urban environments regarding resident activities, environmental transformations, or infrastructure performance"
     },{ "title":"Geospatial Platform Development",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/GeospatialPlatformDevelopment_services_usergroup.jpg",
-      "description": "designing and developing new platforms for the use existing geospatial data"
+      "description": "Designing and developing new platforms for the use existing geospatial data"
     },{ "title":"Crowdsourcing Platform Development",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/CrowdsourcingPlatformdev_services_usergroup.jpg",
-      "description": "designing and developing platforms for crowdsourcing information as part of public campaigns or urban cooperation efforts"
+      "description": "Designing and developing platforms for crowdsourcing information as part of public campaigns or urban cooperation efforts"
     },{ "title":"Location-based Alerts & Services",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/LocationbasedAlerts_services_usergroup.jpg",
-      "description": "developing bespoke alerts or notification processes based on existing data, and designing and developing data collection to initiate alerts or early warning systems"
+      "description": "Developing bespoke alerts or notification processes based on existing data, and designing and developing data collection to initiate alerts or early warning systems"
     },{ "title":"Aero-spatial Data Collection",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/aerospatial.jpg",
-      "description": "coordinating the collection and processing of aerospatial data with unmanned aerial vehicles"
+      "description": "Coordinating the collection and processing of aerospatial data with unmanned aerial vehicles"
     },{ "title":"Institutional Ethnography",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/InstitutionalAnthropology_services_usergroup.jpg",
-      "description": "co-researching technical needs with organizations or institutions preparing to invest in digital infrastructure, as well as ongoing co-research with collaborators regarding tools in-the-making as a part of design and development "
+      "description": "Co-researching technical needs with organizations or institutions preparing to invest in digital infrastructure, as well as ongoing co-research with collaborators regarding tools in-the-making as a part of design and development "
     },{ "title":"Economic Assessments",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/EconomicAssessments_services_usergroup.jpg",
-      "description": "coordinating economic assessments of infrastructure or other urban projects, or developing analytic tools for assessing the projective value of digital infrastructure investments"
+      "description": "Coordinating economic assessments of infrastructure or other urban projects, or developing analytic tools for assessing the projective value of digital infrastructure investments"
     },{ "title":"Technical Performance Evaluations",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/TechnicalPerformanceEvaluations_services_usergroup.jpg",
-      "description": "coordinating data collection to evaluate the performance of technical urban systems"
+      "description": "Coordinating data collection to evaluate the performance of technical urban systems"
     },{ "title":"Technical Assistance & Recommendations",
       "url":"https://s3.eu-central-1.amazonaws.com/userlanding/assets/services/TechnicalAssistance_services_usergroup.jpg",
-      "description": "designing and developing protocols for the usage and maintenance of digital infrastructure, coordinating technical reviews and preparing technical procurement packages, developing recommendations or reviews for digital infrastructure procurement"
+      "description": "Designing and developing protocols for the usage and maintenance of digital infrastructure, coordinating technical reviews and preparing technical procurement packages, developing recommendations or reviews for digital infrastructure procurement"
     }
   ]
 }

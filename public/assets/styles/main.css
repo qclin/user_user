@@ -209,6 +209,10 @@ ul.methodology{
     #philosophy-page.tabcontent .row:first-of-type{
         height: 70vh;
     }
+    ul.services li{
+        display: inline-block;
+        height: 25vh;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 767px){
