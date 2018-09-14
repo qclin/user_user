@@ -130,7 +130,9 @@ textarea{
     repeating-linear-gradient(white, white 20px, #707070 20px, #707070 21px, white 21px);
   line-height: 21px;
 }
-
+.touch{
+    margin-bottom: 60px;
+}
 @media (min-width: 320px) and (max-width: 767px){
 
   #contact-modal{
@@ -138,12 +140,23 @@ textarea{
     z-index: 50;
     width: inherit;
     height: 100vh;
+
   }
   #address{
     position: relative;
   }
+  #close-modal{
+      position: fixed;
+      top: 13px;
+      right: 13px;
+  }
 
-
+  .touch{
+      margin-bottom: 30px;
+  }
+  #address{
+      margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px){
