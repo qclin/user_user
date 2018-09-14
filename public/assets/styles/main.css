@@ -19,8 +19,13 @@ body, html {
     position: relative;
 }
 
-body.inverse{
-  color: #fff
+body.inverse,
+footer.inverse{
+  color: #fff;
+  border-top: 1.2px solid #fff;
+}
+.service-item .subheader{
+    cursor: pointer;
 }
 
 .aboutPage footer{
@@ -117,7 +122,8 @@ img.service-image{
   z-index: -1000;
   top: 0;
   width: 100%;
-  height: calc(100% + 165px);
+  /* height: calc(100% + 165px); */
+  height: calc(100% + 300px);
   object-fit: cover;
 }
 
@@ -132,9 +138,11 @@ ul.services li{
   position: relative;
 }
 
-.methodology .subheader,
+.methodology .subheader{
+    margin-bottom: 30px;
+}
 .services .subheader{
-  cursor: pointer;
+    margin-bottom: 15px;
 }
 .services .content{
   display: none;
@@ -216,7 +224,7 @@ ul.methodology{
 }
 @media (min-width:768px){
     .service-intro{
-      margin: 0 30px 30px 30px;
+      margin: 30px;
       width: 338px;
       line-height: 23px;
       font-size: 18px;
@@ -237,6 +245,17 @@ ul.methodology{
     ul.services li{
         display: inline-block;
         height: 25vh;
+    }
+
+    #down-arrow{
+        position: absolute;
+        bottom: 120px;
+        right: 60px;
+        background: url('/icons/arrow_green-01_2.svg') no-repeat top left;
+        width: 1em;
+        height: 2em;
+        /* background-size: cover; */
+        /* margin-bottom: 0; */
     }
 }
 

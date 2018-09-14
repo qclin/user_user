@@ -32,6 +32,8 @@ function loadCarousel(){
 
       $('#about-carousel .carousel-image caption').text(selectedImage.info)
       $('body').addClass('inverse');
+      $('footer').removeClass('inverse');
+
     }
 
 
@@ -42,7 +44,7 @@ function getImageForPage(page){
         'info': "Irrawaddy River, Myin Ka Bar, Yangon (2014)",
         'url':"https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/1_about_usergroup.jpg"
     }, {
-        'info': "Water level sensor installation, Jakarta, Indonesia (2016)",
+        'info': "Site research, Banyuwangi Regency, Indonesia (2014)",
         'url':"https://s3.eu-central-1.amazonaws.com/userlanding/assets/about/2_about_usergroup.jpg"
     }, {
         'info': "Marunda Rasunawan, Jakarta, Indonesia (2013)",

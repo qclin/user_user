@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.services li').hover(function(){
+  $('.services li').click(function(){
 
     $(this).find('.marker').toggleClass('tinted')
     $(this).siblings().find('.tinted').toggleClass('tinted')
@@ -12,6 +12,7 @@ $(document).ready(function(){
     displayImage.attr('src', imageSrc);
     if($(window).width() > 768){
       $('body').addClass('inverse');
+      $('footer').addClass('inverse');
     }
   });
 
