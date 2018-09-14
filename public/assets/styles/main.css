@@ -215,7 +215,7 @@ footer.locked{
 
 footer {
   color: #000;
-  padding: 15px 30px;
+  padding: 0px 30px;
 }
 
 ul.methodology{
@@ -262,6 +262,9 @@ ul.methodology{
 @media (min-width: 320px) and (max-width: 767px){
     footer .column{
         margin-bottom: 12px;
+    }
+    footer .column:last-of-type {
+        margin-bottom: 30px;
     }
   .main-text{
     margin: 0 auto;
@@ -314,8 +317,11 @@ ul.methodology{
       margin-right: 30px;
       margin-bottom: 15px;
   }
+    /* .service-intro{
+        margin-bottom: 30px;
+    } */
   .service-intro{
-      margin: 30px 30px;
+      margin: 30px 30px !important;
   }
 
     .services .content{
@@ -323,6 +329,9 @@ ul.methodology{
     }
     .methodology li{
         border-bottom: 1.2px solid;
+    }
+    .methodology li p{
+        padding-bottom: 15px;
     }
     .methodology .content{
         display: none;

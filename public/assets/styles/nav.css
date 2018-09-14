@@ -135,6 +135,7 @@ nav a:hover{
   .tab-container{
     z-index: 100;
     display: block;
+    width: fit-content;
   }
 
   .tablink, a#contact{
