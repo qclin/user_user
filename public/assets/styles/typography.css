@@ -31,6 +31,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Apercu-Medium';
+    src: url('../fonts/Apercu-Medium/Apercu-Medium.eot');
+     src:  url('../fonts/Apercu-Medium/Apercu-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Apercu-Medium/Apercu-Medium.woff') format('woff'),
+        url('../fonts/Apercu-Medium/Apercu-Medium.ttf')  format('truetype'),
+        url('../fonts/Apercu-Medium/Apercu-Medium.svg#Apercu-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'SuisseWorks-Bold';
@@ -78,7 +88,7 @@ body.inverse{
 }
 
 .title, .menu-item{
-  font-family: 'Apercu-Bold';
+  font-family: 'Apercu-Medium';
   font-size: 12px;
   text-transform: uppercase;
   line-height: initial;
