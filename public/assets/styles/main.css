@@ -123,7 +123,7 @@ img.service-image{
   top: 0;
   width: 100%;
   /* height: calc(100% + 165px); */
-  height: calc(100% + 300px);
+  height: calc(100% + 250px);
   object-fit: cover;
 }
 

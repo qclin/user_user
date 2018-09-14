@@ -92,6 +92,7 @@ body.inverse{
   font-size: 12px;
   text-transform: uppercase;
   line-height: initial;
+  letter-spacing: .6px;
 }
 
 /* header */
